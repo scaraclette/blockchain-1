@@ -15,5 +15,7 @@ describe('Blockchain', () => {
   it('adds a new block to the chain', () => {
     const newData = 'foo bar'
     blockchain.addBlock({ data: newData })
+
+    expect(blockchain.chain[blockchain.chain.length-1].data).toEqual(newData)
   })
 })

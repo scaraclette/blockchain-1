@@ -3,6 +3,7 @@ const cryptoHash = require('./crypto-hash')
 
 class Block {
   constructor({ timestamp, lastHash, hash, data }) {
+    // Chain validation
     this.timestamp = timestamp
     this.lastHash = lastHash
     this.hash = hash
